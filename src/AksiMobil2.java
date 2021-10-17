@@ -1,20 +1,16 @@
 public class AksiMobil2 {
-    
-    // membuat class
-    static class Mobil2 {
-        String warna;
-        int tahunProduksi;
-    
-    void printMobil() {
-        System.out.println("Warna : "+ warna);
-        System.out.println("Tahun Produksi : "+tahunProduksi);
-    }
-    }
-
     public static void main(String[] args) {
-        Mobil2 mobilku = new Mobil2();
-        mobilku.warna = "Biru";
-        mobilku.tahunProduksi = 2012;
-        mobilku.printMobil();
+        
+        // buat objeck
+        var mobil2 = new Mobil2();
+        
+        // manipulasi field yang telah dibuat
+        mobil2.warna = "Merah";
+        // untuk tahun produksi tidak perlu melakukan manipulasi field
+        // karena telah di set menjadi field atau dikunci
+
+        // panggil(akses) dan menampilkan method yang telah dibuat
+        mobil2.printMobil();
+
     }
 }
